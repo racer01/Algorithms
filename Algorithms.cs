@@ -34,7 +34,7 @@ namespace Algorithms
             throw new NotImplementedException();
         }
 
-        public int[] LargestOfFour(int[,] numbers)
+        public int[] LargestOfFour(int[][] numbers)
         {
             throw new NotImplementedException();
         }
