@@ -114,11 +114,11 @@ namespace Algorithms
         [Test]
         public void TestlargestOfFour()
         {
-            int[,] arr = new int[,]{
-                {13,27,18,26},
-                {4,5,1,3},
-                {32,35,37,39},
-                {1000,1001,857,1}
+            int[][] arr = new int[][]{
+                new int[] {13,27,18,26},
+                new int[] {4,5,1,3},
+                new int[] {32,35,37,39},
+                new int[] {1000,1001,857,1}
             };
             Assert.AreEqual(new int[] { 27, 5, 39, 1001 }, Algorithms.LargestOfFour(arr));
         }

@@ -12,7 +12,7 @@
 
         string TitleCase(string word);
 
-        int[] LargestOfFour(int[,] numbers);
+        int[] LargestOfFour(int[][] numbers);
 
         bool ConfirmEnding(string word, string end);
 
