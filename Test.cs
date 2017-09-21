@@ -20,7 +20,8 @@ namespace Algorithms
             // 2
             object[] param2 = new object[] { 0, 1, 2, 3, 4, 5 };
             object[][] test2 = new object[][]{
-                new object[] {0,1,2,3},
+                new object[] {0,1},
+                new object[] {2,3},
                 new object[] {4,5}
             };
             Assert.AreEqual(test2, Algorithms.ChunkArrayInGroups(param2, 2));
