@@ -75,10 +75,11 @@ namespace Algorithms
         [Test]
         public void TestDestroyer()
         {
-            Assert.AreEqual(new object[] { 1, 1 }, Algorithms.Destroyer(new object[] { 1, 2, 3, 1, 2, 3 }, new int[] { 2, 3 }));
-            Assert.AreEqual(new object[] { 1, 5, 1 }, Algorithms.Destroyer(new object[] { 1, 2, 3, 5, 1, 2, 3 }, new int[] { 2, 3 }));
-            Assert.AreEqual(new object[] { 1 }, Algorithms.Destroyer(new object[] { 3, 5, 1, 2, 2 }, new int[] { 2, 3, 5 }));
-            Assert.AreEqual(new object[] { }, Algorithms.Destroyer(new object[] { 2, 3, 2, 3 }, new int[] { 2, 3, }));
+            Assert.AreEqual(new object[] { 1, 1 }, Algorithms.Destroyer(new object[] { 1, 2, 3, 1, 2, 3 }, 2, 3));
+            Assert.AreEqual(new object[] { 1, 5, 1 }, Algorithms.Destroyer(new object[] { 1, 2, 3, 5, 1, 2, 3 }, 2, 3));
+            Assert.AreEqual(new object[] { 1 }, Algorithms.Destroyer(new object[] { 3, 5, 1, 2, 2 }, 2, 3, 5));
+            Assert.AreEqual(new object[] { }, Algorithms.Destroyer(new object[] { 2, 3, 2, 3 }, 2, 3));
+            Assert.AreEqual(new object[] { "hamburger" }, Algorithms.Destroyer(new object[] { "tree", "hamburger", 53 }, "tree", 53));
         }
 
         [Test]
