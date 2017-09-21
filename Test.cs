@@ -7,54 +7,54 @@ namespace Algorithms
     {
         private IAlgorithms Algorithms = new Algorithms();
 
+        [Test]
         public void TestChunkArrayInGroups()
         {
             // 1
             object[] param1 = new object[] { 0, 1, 2, 3, 4, 5 };
-            int[][] test1 = new int[][]{
-                new int[] {0,1,2},
-                new int[] {3,4,5},
+            object[][] test1 = new object[][]{
+                new object[] {0,1,2},
+                new object[] {3,4,5},
             };
             Assert.AreEqual(test1, Algorithms.ChunkArrayInGroups(param1, 3));
             // 2
             object[] param2 = new object[] { 0, 1, 2, 3, 4, 5 };
-            int[][] test2 = new int[][]{
-                new int[] {0,1,2,3},
-                new int[] {4,5}
+            object[][] test2 = new object[][]{
+                new object[] {0,1,2,3},
+                new object[] {4,5}
             };
             Assert.AreEqual(test2, Algorithms.ChunkArrayInGroups(param2, 2));
             // 3
             object[] param3 = new object[] { 0, 1, 2, 3, 4, 5 };
-            int[][] test3 = new int[][]{
-                new int[] {0,1,2},
-                new int[] {3,4,5},
-                new int[] {6}
+            object[][] test3 = new object[][]{
+                new object[] {0,1,2,3},
+                new object[] {4,5}
             };
             Assert.AreEqual(test3, Algorithms.ChunkArrayInGroups(param3, 4));
             // 4
             object[] param4 = new object[] { 0, 1, 2, 3, 4, 5, 6 };
-            int[][] test4 = new int[][]{
-                new int[] {0,1,2},
-                new int[] {3,4,5},
-                new int[] {6}
+            object[][] test4 = new object[][]{
+                new object[] {0,1,2},
+                new object[] {3,4,5},
+                new object[] {6}
             };
             Assert.AreEqual(test4, Algorithms.ChunkArrayInGroups(param4, 3));
             // 5
             object[] param5 = new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
-            int[][] test5 = new int[][]{
-                new int[] {0,1,2,3},
-                new int[] {4,5,6,7},
-                new int[] {8}
+            object[][] test5 = new object[][]{
+                new object[] {0,1,2,3},
+                new object[] {4,5,6,7},
+                new object[] {8}
             };
             Assert.AreEqual(test5, Algorithms.ChunkArrayInGroups(param5, 4));
             // 6
             object[] param6 = new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
-            int[][] test6 = new int[][]{
-                new int[] {0,1},
-                new int[] {2,3},
-                new int[] {4,5},
-                new int[] {6,7},
-                new int[] {8}
+            object[][] test6 = new object[][]{
+                new object[] {0,1},
+                new object[] {2,3},
+                new object[] {4,5},
+                new object[] {6,7},
+                new object[] {8}
             };
             Assert.AreEqual(test6, Algorithms.ChunkArrayInGroups(param6, 2));
         }
